@@ -65,12 +65,12 @@ background:#000;
 position:absolute;
 top:150px;
 left:0;
+
 width:74%;
 height:calc(100vh - 150px);
-object-fit:cover;
-object-position:center 35%;
-z-index:0;
-filter:grayscale(100%) brightness(.85) contrast(1.08);
+
+object-fit:contain;
+object-position:center top;
 }
 
 .hero::after{
