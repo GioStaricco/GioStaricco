@@ -15,6 +15,8 @@ font-family:'Oswald',sans-serif;
 line-height:1.7;
 }
 
+/* NAVIGATION */
+
 nav{
 position:fixed;
 top:0;
@@ -51,6 +53,8 @@ nav a:hover{
 color:#ff0000;
 }
 
+/* HERO */
+
 .hero{
 position:relative;
 height:100vh;
@@ -62,14 +66,16 @@ background:#000;
 position:absolute;
 left:-15%;
 top:4%;
+
 width:90%;
 height:96%;
+
 object-fit:contain;
 object-position:center top;
 
-filter:
-brightness(.9)
-contrast(1.05);
+z-index:0;
+
+filter:brightness(.9) contrast(1.05);
 }
 
 .hero::after{
@@ -80,12 +86,15 @@ right:0;
 width:100%;
 height:100%;
 
+z-index:1;
+pointer-events:none;
+
 background:linear-gradient(
 to right,
-rgba(0,0,0,0) 35%,
-rgba(0,0,0,.25) 50%,
-rgba(0,0,0,.65) 65%,
-rgba(0,0,0,.9) 80%,
+rgba(0,0,0,0) 30%,
+rgba(0,0,0,.15) 45%,
+rgba(0,0,0,.45) 60%,
+rgba(0,0,0,.8) 75%,
 #000 100%
 );
 }
@@ -93,10 +102,14 @@ rgba(0,0,0,.9) 80%,
 .hero-content{
 position:absolute;
 top:50%;
-right:4%;
+right:5%;
+
 transform:translateY(-50%);
-width:28%;
+
+width:30%;
+
 z-index:5;
+
 text-align:left;
 }
 
@@ -122,6 +135,8 @@ margin-bottom:25px;
 display:none;
 }
 
+/* BUTTON */
+
 .btn{
 display:inline-block;
 padding:15px 30px;
@@ -135,6 +150,28 @@ transition:.3s;
 .btn:hover{
 opacity:.85;
 }
+
+/* HERO SOCIALS */
+
+.hero-socials{
+display:flex;
+gap:35px;
+margin-top:35px;
+}
+
+.hero-socials a{
+font-size:3rem;
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+.hero-socials a:hover{
+color:#ff0000;
+transform:translateY(-4px);
+}
+
+/* CONTACT SOCIALS */
 
 .social-icons{
 display:flex;
@@ -155,23 +192,7 @@ color:#ff0000;
 transform:translateY(-3px);
 }
 
-.hero-socials{
-display:flex;
-gap:35px;
-margin-top:35px;
-}
-
-.hero-socials a{
-font-size:3rem;
-color:white;
-text-decoration:none;
-transition:.3s;
-}
-
-.hero-socials a:hover{
-color:#ff0000;
-transform:translateY(-4px);
-}
+/* SECTIONS */
 
 section{
 padding:100px 10%;
@@ -185,6 +206,8 @@ text-transform:uppercase;
 letter-spacing:2px;
 }
 
+/* CALENDAR */
+
 .calendar{
 margin-top:30px;
 border:1px solid #ff0000;
@@ -194,6 +217,8 @@ box-shadow:0 0 20px rgba(255,0,0,.25);
 .calendar iframe{
 width:100%;
 }
+
+/* GALLERY */
 
 .gallery{
 display:grid;
@@ -223,9 +248,13 @@ margin-bottom:20px;
 opacity:.8;
 }
 
+/* CONTACT */
+
 #contact{
 text-align:center;
 }
+
+/* FOOTER */
 
 footer{
 text-align:center;
@@ -233,6 +262,8 @@ padding:40px;
 background:#050505;
 border-top:1px solid #222;
 }
+
+/* MOBILE */
 
 @media(max-width:768px){
 
@@ -248,7 +279,9 @@ justify-content:center;
 
 .hero-image{
 left:0;
+top:0;
 width:100%;
+height:100%;
 object-position:center top;
 }
 
