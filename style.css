@@ -68,7 +68,7 @@ height:100%;
 
 object-fit:cover;
 
-object-position:25% center;
+object-position:left center;
 }
 
 .hero::after{
@@ -130,11 +130,23 @@ transition:.3s;
 opacity:.85;
 }
 
-.social-icons,
-.hero-socials{
+.social-icons{
 display:flex;
+justify-content:center;
 gap:25px;
 margin-top:35px;
+}
+
+.social-icons a{
+font-size:2rem;
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+.social-icons a:hover{
+color:#ff0000;
+transform:translateY(-3px);
 }
 
 .hero-socials{
@@ -144,7 +156,7 @@ margin-top:35px;
 }
 
 .hero-socials a{
-font-size:2.8rem;
+font-size:3rem;
 color:white;
 text-decoration:none;
 transition:.3s;
@@ -153,12 +165,6 @@ transition:.3s;
 .hero-socials a:hover{
 color:#ff0000;
 transform:translateY(-4px);
-}
-
-.social-icons a:hover,
-.hero-socials a:hover{
-color:#ff0000;
-transform:translateY(-3px);
 }
 
 section{
