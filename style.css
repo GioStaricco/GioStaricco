@@ -65,13 +65,13 @@ background:#000;
 .hero-image{
 position:absolute;
 left:-10%;
-top:0;
+top:8%;
 width:75%;
-height:100%;
-object-fit:cover;
-object-position:center 20%;
+height:92%;
+object-fit:contain;
+object-position:center top;
 z-index:0;
-filter:brightness(.85) contrast(1.08);
+filter:brightness(.9) contrast(1.05);
 }
 
 .hero::after{
@@ -98,16 +98,22 @@ rgba(0,0,0,.95) 70%,
 .hero-content{
 position:absolute;
 top:50%;
-right:7%;
+right:4%;
 transform:translateY(-50%);
-width:38%;
+width:42%;
 z-index:5;
 text-align:left;
 }
 
 .hero h1{
 font-size:5rem;
+line-height:1;
 letter-spacing:4px;
+font-weight:700;
+text-transform:uppercase;
+color:white;
+text-shadow:0 0 20px rgba(0,0,0,.5);
+margin-bottom:25px;
 white-space:nowrap;
 }
 
