@@ -62,12 +62,14 @@ background:#000;
 position:absolute;
 left:-15%;
 top:4%;
-
 width:90%;
 height:96%;
-
 object-fit:contain;
 object-position:center top;
+
+filter:
+brightness(.9)
+contrast(1.05);
 }
 
 .hero::after{
@@ -91,9 +93,9 @@ rgba(0,0,0,.9) 80%,
 .hero-content{
 position:absolute;
 top:50%;
-right:5%;
+right:4%;
 transform:translateY(-50%);
-width:30%;
+width:28%;
 z-index:5;
 text-align:left;
 }
