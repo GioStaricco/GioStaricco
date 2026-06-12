@@ -60,12 +60,14 @@ background:#000;
 
 .hero-image{
 position:absolute;
-left:-18%;
-top:6%;
-width:88%;
-height:105%;
-object-fit:cover;
-object-position:center center;
+left:-15%;
+top:4%;
+
+width:90%;
+height:96%;
+
+object-fit:contain;
+object-position:center top;
 }
 
 .hero::after{
