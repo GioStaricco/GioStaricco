@@ -89,9 +89,9 @@ rgba(0,0,0,.9) 65%,
 .hero-content{
 position:absolute;
 top:50%;
-right:6%;
+right:5%;
 transform:translateY(-50%);
-width:38%;
+width:30%;
 z-index:5;
 text-align:left;
 }
@@ -269,11 +269,6 @@ letter-spacing:3px;
 .hero-tagline{
 font-size:.9rem;
 letter-spacing:2px;
-}
-
-.hero-description{
-margin-left:auto;
-margin-right:auto;
 }
 
 section{
