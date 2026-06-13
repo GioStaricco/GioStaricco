@@ -181,7 +181,7 @@ transform:translateY(-3px);
 }
 
 section{
-padding:100px 10%;
+padding:60px 10%;
 }
 
 #bio{
@@ -190,6 +190,13 @@ padding-bottom:20px;
 
 #shows{
 padding-top:20px;
+}
+
+#shows,
+#gallery,
+#epk,
+#contact{
+border-top:1px solid rgba(255,255,255,.08);
 }
 
 h2{
