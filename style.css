@@ -181,15 +181,7 @@ transform:translateY(-3px);
 }
 
 section{
-padding:60px 10%;
-}
-
-#bio{
-padding-bottom:20px;
-}
-
-#shows{
-padding-top:20px;
+padding:20px 10%;
 }
 
 #shows,
