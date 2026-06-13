@@ -248,6 +248,40 @@ background:#050505;
 border-top:1px solid #222;
 }
 
+.contact-form{
+max-width:700px;
+margin:40px auto;
+}
+
+form{
+max-width:700px;
+margin:40px auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+form input,
+form textarea{
+background:#111;
+border:1px solid #333;
+color:white;
+padding:15px;
+font-family:'Oswald',sans-serif;
+font-size:1rem;
+}
+
+form input:focus,
+form textarea:focus{
+outline:none;
+border-color:#ff0000;
+}
+
+form button{
+cursor:pointer;
+border:none;
+}
+
 @media(max-width:768px){
 
 nav{
