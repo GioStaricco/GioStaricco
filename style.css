@@ -248,12 +248,7 @@ background:#050505;
 border-top:1px solid #222;
 }
 
-.contact-form{
-max-width:700px;
-margin:40px auto;
-}
-
-form{
+#contact form{
 max-width:700px;
 margin:40px auto;
 display:flex;
@@ -261,8 +256,9 @@ flex-direction:column;
 gap:15px;
 }
 
-form input,
-form textarea{
+#contact form input,
+#contact form textarea{
+width:100%;
 background:#111;
 border:1px solid #333;
 color:white;
@@ -271,15 +267,15 @@ font-family:'Oswald',sans-serif;
 font-size:1rem;
 }
 
-form input:focus,
-form textarea:focus{
+#contact form input:focus,
+#contact form textarea:focus{
 outline:none;
 border-color:#ff0000;
 }
 
-form button{
-cursor:pointer;
-border:none;
+#contact form button{
+align-self:center;
+margin-top:10px;
 }
 
 @media(max-width:768px){
