@@ -349,6 +349,9 @@ height:450px;
 /* EPK booking section only */
 .epk-section {
   text-align: center;
+/* EPK section — Gio Staricco */
+.epk-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .epk-intro,
@@ -363,6 +366,17 @@ height:450px;
   margin: 38px auto 52px;
   padding: 30px;
   background: #101010;
+  margin: 0 auto 25px;
+  line-height: 1.8;
+}
+
+.epk-booking,
+.epk-contact {
+  max-width: 850px;
+  margin: 35px auto 50px;
+  padding: 30px;
+  text-align: center;
+  background: #111;
   border: 1px solid #292929;
   border-left: 3px solid #ff0000;
 }
@@ -382,6 +396,16 @@ height:450px;
 
 .epk-subheading {
   margin: 42px 0 14px;
+.epk-booking h3,
+.epk-contact h3 {
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.epk-subheading {
+  margin: 45px 0 15px;
   color: #ff0000;
   font-size: 1.8rem;
   text-transform: uppercase;
@@ -397,6 +421,7 @@ height:450px;
 }
 
 .epk-acoustic-grid {
+.epk-acoustic {
   grid-template-columns: minmax(0, 1fr);
   max-width: 340px;
 }
@@ -428,6 +453,7 @@ height:450px;
 }
 
 .epk-contact-panel {
+.epk-contact {
   margin-bottom: 10px;
 }
 
@@ -439,6 +465,8 @@ height:450px;
   }
 
   .epk-booking-panel {
+  .epk-booking,
+  .epk-contact {
     padding: 22px;
   }
 
